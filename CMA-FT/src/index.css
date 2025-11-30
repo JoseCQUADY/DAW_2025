@@ -1,0 +1,296 @@
+:root {
+  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #0060a0;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #004c80;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .MuiContainer-root {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  
+  .MuiTypography-h4 {
+    font-size: 1.5rem !important;
+  }
+  
+  .MuiTypography-h5 {
+    font-size: 1.25rem !important;
+  }
+  
+  .MuiDialog-paper {
+    margin: 16px !important;
+    width: calc(100% - 32px) !important;
+    max-width: none !important;
+  }
+  
+  .MuiTableCell-root {
+    padding: 8px !important;
+    font-size: 0.875rem !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .MuiContainer-root {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .MuiContainer-root {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .MuiContainer-root {
+    max-width: 1200px !important;
+  }
+}
+
+
+.MuiTableContainer-root {
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #94a3b8 transparent;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar {
+  height: 8px;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 4px;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+.MuiTable-root {
+  min-width: 650px;
+}
+
+.MuiTableCell-root {
+  white-space: nowrap;
+}
+
+
+@media print {
+  .no-print,
+  .MuiAppBar-root,
+  .MuiDrawer-root,
+  .MuiBackdrop-root,
+  .MuiDialog-root,
+  .MuiTooltip-popper,
+  .MuiTablePagination-root,
+  nav,
+  header,
+  footer,
+  button:not(.print-include),
+  .MuiIconButton-root,
+  .MuiButton-root:not(.print-include),
+  .MuiFab-root {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .print-container,
+  .MuiContainer-root {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .MuiPaper-root {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+    margin-bottom: 16px !important;
+  }
+
+  .MuiTable-root {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  .MuiTableHead-root .MuiTableCell-root {
+    background-color: #f5f5f5 !important;
+    font-weight: bold !important;
+    border-bottom: 2px solid #333 !important;
+  }
+
+  .MuiTableCell-root {
+    border: 1px solid #ddd !important;
+    padding: 8px !important;
+    font-size: 10pt !important;
+  }
+
+  .MuiTableRow-root {
+    page-break-inside: avoid !important;
+  }
+
+  .MuiTypography-h4 {
+    font-size: 18pt !important;
+    margin-bottom: 8pt !important;
+  }
+
+  .MuiTypography-h5 {
+    font-size: 14pt !important;
+  }
+
+  .MuiTypography-body1,
+  .MuiTypography-body2 {
+    font-size: 10pt !important;
+  }
+
+  .MuiCard-root {
+    page-break-inside: avoid !important;
+    margin-bottom: 12pt !important;
+    border: 1px solid #ccc !important;
+  }
+
+  .MuiGrid-container {
+    display: block !important;
+  }
+
+  .MuiGrid-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 8pt !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  @page:first {
+    margin-top: 2cm;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  img, table, figure {
+    page-break-inside: avoid !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+
+  .MuiTableCell-root:last-child {
+    display: none !important;
+  }
+}
+
+*:focus-visible {
+  outline: 2px solid #0060a0 !important;
+  outline-offset: 2px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .MuiButton-contained {
+    border: 2px solid currentColor !important;
+  }
+  
+  .MuiTableCell-root {
+    border: 1px solid #000 !important;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-thumb {
+    background-color: #475569;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #64748b;
+  }
+}

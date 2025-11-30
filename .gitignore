@@ -1,0 +1,43 @@
+    
+# Dependencies
+/CMA-BC/node_modules/
+/CMA-FT/node_modules/
+node_modules/
+
+# Build outputs
+/CMA-FT/dist/
+/CMA-FT/build/
+
+
+# Environment files
+/CMA-BC/.env
+/CMA-FT/.env
+
+
+# Prisma generated files (Backend)
+/CMA-BC/generated/
+/CMA-BC/prisma/migrations/
+prisma/generated/
+
+# Gatsby files
+.cache/
+public/
+
+# Vite build cache
+.vite/
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+.env
